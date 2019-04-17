@@ -1,6 +1,6 @@
 module.exports = {
-    signUp: require('./signUp'),
-    signIn: require('./signIn'),
-    resetPassword: require('./resetPassword'),
-    forgotPassword: require('./forgotPassword'),
+    signUp: require('./src/signUp'),
+    signIn: require('./src/signIn'),
+    resetPassword: require('./src/resetPassword'),
+    forgotPassword: require('./src/forgotPassword'),
 }
