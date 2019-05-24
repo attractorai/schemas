@@ -22,7 +22,7 @@ module.exports = Yup.object().shape({
     oldPassword: Yup.string()
         .when('changingPassword', {
             is: true,
-            then: yup.string()
+            then: Yup.string()
                 .trim()
                 .min(6, 'Your password is too short.')
                 .max(64, 'Your password is too long.')
@@ -32,7 +32,7 @@ module.exports = Yup.object().shape({
     newPassword: Yup.string()
         .when('changingPassword', {
             is: true,
-            then: yup.string()
+            then: Yup.string()
                 .trim()
                 .min(6, 'Your password is too short.')
                 .max(64, 'Your password is too long.')
