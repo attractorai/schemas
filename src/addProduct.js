@@ -8,8 +8,7 @@ module.exports = Yup.object().shape({
         .required('Required'),
 
     productLink: Yup.string()
-        .trim()
-        .min(2, 'Too Short!'),
+        .trim(),
 
     integrationProvider: Yup.string()
         .oneOf([
@@ -26,8 +25,8 @@ module.exports = Yup.object().shape({
             is: 'mixpanel',
             then: Yup.string()
                 .trim()
-                .min(31, 'Too short.')
-                .max(33, 'Too long.')
+                .min(32, 'Too short.')
+                .max(32, 'Too long.')
                 .required('Required'),
         }),
 
@@ -36,8 +35,8 @@ module.exports = Yup.object().shape({
             is: 'amplitude',
             then: Yup.string()
                 .trim()
-                .min(31, 'Too short.')
-                .max(33, 'Too long.')
+                .min(32, 'Too short.')
+                .max(32, 'Too long.')
                 .required('Required'),
         }),
 
@@ -46,8 +45,8 @@ module.exports = Yup.object().shape({
             is: 'amplitude',
             then: Yup.string()
                 .trim()
-                .min(31, 'Too short.')
-                .max(33, 'Too long.')
+                .min(32, 'Too short.')
+                .max(32, 'Too long.')
                 .required('Required'),
         }),
 })
