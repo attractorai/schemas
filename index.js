@@ -3,5 +3,7 @@ module.exports = {
     signIn: require('./src/signIn'),
     resetPassword: require('./src/resetPassword'),
     forgotPassword: require('./src/forgotPassword'),
+
     accountSettings: require('./src/accountSettings'),
+    addProduct: require('./src/addProduct'),
 }
