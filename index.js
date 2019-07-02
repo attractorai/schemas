@@ -6,4 +6,5 @@ module.exports = {
 
     accountSettings: require('./src/accountSettings'),
     addProduct: require('./src/addProduct'),
+    addResearch: require('./src/addResearch'),
 }
